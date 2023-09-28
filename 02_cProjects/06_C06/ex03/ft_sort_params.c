@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_sort_params.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yahmadi <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: avadsoon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/25 18:41:08 by yahmadi           #+#    #+#             */
-/*   Updated: 2023/09/25 20:00:05 by yahmadi          ###   ########.fr       */
+/*   Created: 2023/09/28 14:28:24 by avadsoon          #+#    #+#             */
+/*   Updated: 2023/09/28 14:28:32 by avadsoon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,8 @@ int	ft_strcmp(char *s1, char *s2)
 	}
 	return (*s1 - *s2);
 }
+/*
+#include <stdio.h>
 
 int	main(int argc, char **argv)
 {
@@ -64,4 +66,4 @@ int	main(int argc, char **argv)
 	i1 = 0;
 	while (++i1 < argc)
 		ft_putstr(argv[i1]);
-}
+}*/

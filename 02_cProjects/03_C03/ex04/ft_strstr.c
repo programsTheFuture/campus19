@@ -6,12 +6,9 @@
 /*   By: avadsoon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 21:00:34 by avadsoon          #+#    #+#             */
-/*   Updated: 2023/09/26 12:47:05 by avadsoon         ###   ########.fr       */
+/*   Updated: 2023/09/27 13:24:55 by avadsoon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
-#include <stdio.h>
 
 char	*ft_strstr(char *str, char *to_find)
 {
@@ -34,6 +31,8 @@ char	*ft_strstr(char *str, char *to_find)
 	return (0);
 }
 /*
+#include <stdio.h>
+
 int	main()
 {
 	char str[] = "19 1337 Network 2023 piscine Alex Vadsoongnern";

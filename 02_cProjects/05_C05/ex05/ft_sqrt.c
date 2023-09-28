@@ -3,48 +3,36 @@
 /*                                                        :::      ::::::::   */
 /*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yahmadi <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: banunes <nunes.barbarac@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/25 13:52:17 by yahmadi           #+#    #+#             */
-/*   Updated: 2023/09/25 14:11:35 by yahmadi          ###   ########.fr       */
+/*   Created: 2023/09/27 09:32:28 by banunes           #+#    #+#             */
+/*   Updated: 2023/09/28 16:37:12 by avadsoon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <stdlib.h>
 
 int	ft_sqrt(int nb)
 {
-	long	index;
-	long	b;
+	:int	i;
 
-	b = nb;
-	if (b <= 0)
-	{
+	i = 1;
+	if (nb <= 0)
 		return (0);
-	}
-	if (b == 1)
-	{
-		return (1);
-	}
-	index = 2;
-	if (b >= 2)
-	{
-		while (index * index <= b)
-		{
-			if (index * index == b)
-			{
-				return (index);
-			}
-			index++;
-		}
-	}
+	if (nb == 1)
+		return (nb);
+	while (i * i != nb && i * i < nb && i <= 46341)
+		i++;
+	if (i * i == nb)
+		return (i);
 	return (0);
 }
-/*
-int    main(void)
+
+#include <stdio.h>
+
+int	main(int argc, char *argv[])
 {
-        printf("sqrt of %d is %d\n", -2282, ft_sqrt(-2282));
-        printf("sqrt of %d is %d\n", 0, ft_sqrt(0));
-        printf("sqrt of %d is %d\n", 1, ft_sqrt(1));
-        printf("sqrt of %d is %d\n", 4, ft_sqrt(4));
-}*/
+	(void) argc;
+	printf("%d", ft_sqrt(atoi(argv[1])));
+	return 0;
+}

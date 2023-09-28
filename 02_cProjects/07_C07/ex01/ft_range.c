@@ -3,37 +3,53 @@
 /*                                                        :::      ::::::::   */
 /*   ft_range.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mfahad <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: avadsoon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/26 12:34:30 by mfahad            #+#    #+#             */
-/*   Updated: 2023/09/26 13:37:23 by mfahad           ###   ########.fr       */
+/*   Created: 2023/09/28 17:09:49 by avadsoon          #+#    #+#             */
+/*   Updated: 2023/09/28 17:10:17 by avadsoon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdlib.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 int	*ft_range(int min, int max)
 {
 	int	i;
-	int	*str;
-	int	stcounter;
-	int	range;
+	int	*result;
 
-	range = (max - min);
-	stcounter = min;
 	if (min >= max)
-	{
 		return (0);
-	}
-	str = (int *) malloc(sizeof(int) * (range));
-	if (*str != '\0')
-		return (0);
+	i = max - min;
+	result = (malloc(sizeof(int) * i));
+	if (result == NULL)
+		return (NULL);
 	i = 0;
-	while (i < range)
+	while (max > min)
 	{
-		str[i] = stcounter;
-		stcounter++;
+		result[i] = min;
+		min++;
 		i++;
 	}
-	return (str);
+	return (result);
 }
+/*
+int	main(void)
+{
+	int	min;
+	int	max;
+	int	*tab;
+	int	i = 0;
+	int	size;
+
+	min = 5;
+	max = 15;
+	size = max - min;
+	tab = ft_range(min, max);
+	while (i < size)
+	{
+		printf("%d, ", tab[i]);
+		i++;
+	}
+	return (0);
+}*/

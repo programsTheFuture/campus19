@@ -3,33 +3,33 @@
 /*                                                        :::      ::::::::   */
 /*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yahmadi <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: banunes <nunes.barbarac@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/25 12:09:36 by yahmadi           #+#    #+#             */
-/*   Updated: 2023/09/25 12:48:53 by yahmadi          ###   ########.fr       */
+/*   Created: 2023/09/27 09:32:07 by banunes           #+#    #+#             */
+/*   Updated: 2023/09/27 13:18:41 by banunes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include <stdlib.h>
 
 int	ft_iterative_factorial(int nb)
 {
-	unsigned int	result;
+	int	result;
 
 	result = 1;
+	if (nb < 0)
+		return (0);
 	while (nb > 0)
 	{
 		result *= nb;
 		nb--;
 	}
-	if (nb < 0)
-	{
-		return (0);
-	}
 	return (result);
 }
-/*
-int	main(void)
+/*int	main(int argc, char *argv[])
 {
-	printf("%i", ft_iterative_factorial(3));
+	(void) argc;
+	printf("%d", ft_iterative_factorial(atoi(argv[1])));
+	return 0;
 }*/

@@ -3,29 +3,50 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mfahad <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: yabenmen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/26 11:27:29 by mfahad            #+#    #+#             */
-/*   Updated: 2023/09/26 12:32:40 by mfahad           ###   ########.fr       */
+/*   Created: 2023/09/26 18:21:57 by yabenmen          #+#    #+#             */
+/*   Updated: 2023/09/26 18:58:50 by yabenmen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <string.h>
 #include <stdlib.h>
+#include <stdio.h>
+
+int	ft_strlen(char *src)
+{
+	int	i;
+
+	i = 0;
+	while (src[i])
+		i++;
+	return (i);
+}
 
 char	*ft_strdup(char *src)
 {
-	char	*copych;
+	char	*str2;
+	int		length;
 	int		i;
 
 	i = 0;
-	copych = malloc(sizeof(*src));
-	if (copych == NULL)
-		return (NULL);
-	while (src[i] != '\0')
+	length = ft_strlen(src);
+	str2 = malloc((sizeof(char) * length) + 1);
+	while (src[i])
 	{
-		copych[i] = src[i];
+		str2[i] = src[i];
 		i++;
 	}
-	copych[i] = '\0';
-	return (copych);
+	str2[i] = '\0';
+	return (str2);
 }
+/*
+int	main(void)
+{
+	char *src = "abc";
+	char *dest = ft_strdup(src);
+	printf("%s\n", dest);
+	free(dest);
+	return (0);
+}*/

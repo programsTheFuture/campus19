@@ -6,12 +6,9 @@
 /*   By: avadsoon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 13:31:06 by avadsoon          #+#    #+#             */
-/*   Updated: 2023/09/26 13:38:15 by avadsoon         ###   ########.fr       */
+/*   Updated: 2023/09/28 13:23:02 by avadsoon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
-#include <stdio.h>
 
 int	whitespaces(char *str, int *ptr_i)
 {
@@ -50,6 +47,8 @@ int	ft_atoi(char *str)
 	return (result);
 }
 /*
+#include <stdio.h>
+
 int	main(void)
 {
 	char *s = "   ---+--+01234506789ab567";

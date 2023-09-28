@@ -3,37 +3,55 @@
 /*                                                        :::      ::::::::   */
 /*   ft_ultimate_range.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mfahad <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: avadsoon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/26 13:39:37 by mfahad            #+#    #+#             */
-/*   Updated: 2023/09/26 14:30:46 by mfahad           ###   ########.fr       */
+/*   Created: 2023/09/28 17:05:13 by avadsoon          #+#    #+#             */
+/*   Updated: 2023/09/28 17:05:44 by avadsoon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdlib.h>
+#include <stdlib.h>
+#include <stdio.h>
 
-int	ft_ultimate_range(int **range, int min, int max)
+int	*ft_ultimate_range(int min, int max)
 {
-	int	rangenumber;
-	int	size;
-	int	*str;
+	int	i;
+	int	*result;
 
-	rangenumber = (max - min);
 	if (min >= max)
+		*range = NULL;
+	return (0);
+	i = max - min;
+	result = (malloc(sizeof(int) * i));
+	if (result == NULL)
+		*range = NULL;
+	return (-1);
+	i = 0;
+	while (max > min)
 	{
-		*range = 0;
-		return (0);
-	}
-	str = (int *) malloc(sizeof(**range) * (rangenumber));
-	if (*str != '\0')
-		return (0);
-	size = 0;
-	while (min < max)
-	{
-		str[size] = min;
+		result[i] = min;
 		min++;
-		size++;
+		i++;
 	}
-	*range = str;
-	return (size);
+	return (i);
 }
+/*
+int	main(void)
+{
+	int	min;
+	int	max;
+	int	*tab;
+	int	i = 0;
+	int	size;
+
+	min = 5;
+	max = 15;
+	size = max - min;
+	tab = ft_ultimate_range(&tab, min, max);
+	while (i < size)
+	{
+		printf("%d, ", tab[i]);
+		i++;
+	}
+	return (0);
+}*/

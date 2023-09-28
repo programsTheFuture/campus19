@@ -3,31 +3,27 @@
 /*                                                        :::      ::::::::   */
 /*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yahmadi <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: banunes <nunes.barbarac@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/25 12:20:08 by yahmadi           #+#    #+#             */
-/*   Updated: 2023/09/25 12:45:26 by yahmadi          ###   ########.fr       */
+/*   Created: 2023/09/27 09:32:14 by banunes           #+#    #+#             */
+/*   Updated: 2023/09/27 13:20:17 by banunes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include <stdlib.h>
 
 int	ft_recursive_factorial(int nb)
 {
-	int	result;
-
-	result = 1;
-	if (nb > 0)
-	{
-		result *= nb * ft_recursive_factorial(nb - 1);
-		nb -= 1;
-	}
 	if (nb < 0)
 		return (0);
-	return (result);
+	if (nb < 2)
+		return (1);
+	return (nb * ft_recursive_factorial(nb - 1));
 }
-/*
-int	main(void)
+/*int   main(int argc, char *argv[])
 {
-	printf("%i" , ft_recursive_factorial(9));
+        (void) argc;
+        printf("%d", ft_recursive_factorial(atoi(argv[1])));
+        return 0;
 }*/

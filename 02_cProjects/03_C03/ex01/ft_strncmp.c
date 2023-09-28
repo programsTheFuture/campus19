@@ -6,12 +6,9 @@
 /*   By: avadsoon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 19:58:29 by avadsoon          #+#    #+#             */
-/*   Updated: 2023/09/26 17:42:21 by avadsoon         ###   ########.fr       */
+/*   Updated: 2023/09/28 13:10:12 by avadsoon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
-#include <stdio.h>
 
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
@@ -33,7 +30,9 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 	return (0);
 }
 /*
+#include <stdio.h>
+
 int	main(void)
 {
-	printf("%d", ft_strncmp("Hello", "HelloWorld!", 8));
+	printf("%d", ft_strncmp("Hello", "HelloWorld", 8));
 }*/

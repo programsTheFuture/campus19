@@ -6,12 +6,9 @@
 /*   By: avadsoon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/23 16:41:51 by avadsoon          #+#    #+#             */
-/*   Updated: 2023/09/26 11:55:27 by avadsoon         ###   ########.fr       */
+/*   Updated: 2023/09/28 13:47:20 by avadsoon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
-#include <stdio.h>
-#include <string.h>
 
 int	ft_str_is_numeric(char *str)
 {
@@ -29,6 +26,8 @@ int	ft_str_is_numeric(char *str)
 	return (1);
 }
 /*
+#include <stdio.h>
+
 int	main()
 {
 	printf("%d", ft_str_is_numeric("0123456789"));

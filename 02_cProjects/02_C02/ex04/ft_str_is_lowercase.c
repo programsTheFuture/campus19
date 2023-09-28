@@ -6,12 +6,9 @@
 /*   By: avadsoon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/23 16:58:35 by avadsoon          #+#    #+#             */
-/*   Updated: 2023/09/26 15:42:01 by avadsoon         ###   ########.fr       */
+/*   Updated: 2023/09/28 13:47:53 by avadsoon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
-#include <stdio.h>
-#include <string.h>
 
 int	ft_str_is_lowercase(char *str)
 {
@@ -29,6 +26,8 @@ int	ft_str_is_lowercase(char *str)
 	return (1);
 }
 /*
+#include <stdio.h>
+
 int	main(void)
 {
 	printf("%d", ft_str_is_lowercase("abcdefghijklmnopqrstuvwxyz"));

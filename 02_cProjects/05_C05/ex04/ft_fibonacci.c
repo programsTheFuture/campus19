@@ -3,27 +3,43 @@
 /*                                                        :::      ::::::::   */
 /*   ft_fibonacci.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yahmadi <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: banunes <nunes.barbarac@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/25 13:28:22 by yahmadi           #+#    #+#             */
-/*   Updated: 2023/09/26 10:06:40 by yahmadi          ###   ########.fr       */
+/*   Created: 2023/09/27 09:32:24 by banunes           #+#    #+#             */
+/*   Updated: 2023/09/27 13:25:24 by banunes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
 int	ft_fibonacci(int index)
 {
+	int	prev;
+	int	current;
+	int	i;
+	int	next;
+
+	prev = 0;
+	current = 1;
+	i = 2;
 	if (index < 0)
 		return (-1);
 	if (index == 0)
 		return (0);
 	if (index == 1)
 		return (1);
-	return (ft_fibonacci(index - 1) + ft_fibonacci(index - 2));
+	while (i <= index)
+	{
+		next = prev + current;
+		prev = current;
+		current = next;
+		i++;
+	}
+	return (current);
 }
-/*
-int	main(void)
+/*#include <stdio.h>
+#include <stdlib.h>
+int   main(int argc, char *argv[])
 {
-	printf("%i", ft_fibonacci(5));
+        (void) argc;
+        printf("%d", ft_fibonacci(atoi(argv[1])));
+        return 0;
 }*/

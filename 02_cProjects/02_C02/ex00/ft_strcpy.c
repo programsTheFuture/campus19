@@ -6,12 +6,9 @@
 /*   By: avadsoon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 12:38:53 by avadsoon          #+#    #+#             */
-/*   Updated: 2023/09/26 11:47:28 by avadsoon         ###   ########.fr       */
+/*   Updated: 2023/09/28 13:45:17 by avadsoon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
-#include <stdio.h>
 
 char	*ft_strcpy(char *dest, char *src)
 {
@@ -27,6 +24,8 @@ char	*ft_strcpy(char *dest, char *src)
 	return (dest);
 }
 /*
+#include <stdio.h>
+
 int	main(void)
 {
 	char	src[] = "Hi there! ";

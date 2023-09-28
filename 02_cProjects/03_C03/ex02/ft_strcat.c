@@ -6,11 +6,9 @@
 /*   By: avadsoon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 20:16:37 by avadsoon          #+#    #+#             */
-/*   Updated: 2023/09/26 12:43:19 by avadsoon         ###   ########.fr       */
+/*   Updated: 2023/09/27 13:23:20 by avadsoon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
-#include <stdio.h>
 
 char	*ft_strcat(char *dest, char *src)
 {
@@ -33,6 +31,8 @@ char	*ft_strcat(char *dest, char *src)
 	return (dest);
 }
 /*
+#include <stdio.h>
+
 int	main()//linker cmd failed with exit code 1!!!
 {
 	char src[] = "My name is Alex";

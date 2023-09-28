@@ -6,12 +6,9 @@
 /*   By: avadsoon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/23 18:20:33 by avadsoon          #+#    #+#             */
-/*   Updated: 2023/09/26 12:13:41 by avadsoon         ###   ########.fr       */
+/*   Updated: 2023/09/28 14:11:33 by avadsoon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
-#include <stdio.h>
 
 char	*ft_strlowcase(char *str)
 {
@@ -29,7 +26,9 @@ char	*ft_strlowcase(char *str)
 	return (str);
 }
 /*
-int	main()//cc complained - need check!!
+#include <stdio.h>
+
+int	main()
 {
 	char str[] = "ASHFHJGFLKGJ";
 	printf("%s", ft_strlowcase(str));

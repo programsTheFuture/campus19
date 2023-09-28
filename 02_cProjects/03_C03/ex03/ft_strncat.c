@@ -6,11 +6,9 @@
 /*   By: avadsoon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 20:56:53 by avadsoon          #+#    #+#             */
-/*   Updated: 2023/09/26 12:45:09 by avadsoon         ###   ########.fr       */
+/*   Updated: 2023/09/27 13:24:02 by avadsoon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
-#include <stdio.h>
 
 char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
@@ -32,6 +30,8 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 	return (dest);
 }
 /*
+#include <stdio.h>
+
 int	main()
 {
 	char src[] = "Network";

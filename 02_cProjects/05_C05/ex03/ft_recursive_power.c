@@ -3,30 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_recursive_power.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yahmadi <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: banunes <nunes.barbarac@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/25 13:00:49 by yahmadi           #+#    #+#             */
-/*   Updated: 2023/09/25 13:27:46 by yahmadi          ###   ########.fr       */
+/*   Created: 2023/09/27 09:32:21 by banunes           #+#    #+#             */
+/*   Updated: 2023/09/27 13:24:17 by banunes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
 int	ft_recursive_power(int nb, int power)
 {
-	int	result;
-
-	result = nb;
-	if (power > 1)
-		return (nb * ft_recursive_power(nb, (power - 1)));
-	if (power == 0)
-		return (1);
 	if (power < 0)
 		return (0);
-	return (result);
+	if ((nb == 0 && power == 0) || power == 0)
+		return (1);
+	return (nb * ft_recursive_power(nb, power - 1));
 }
-/*
-int	main(void)
+/*#include <stdio.h>
+#include <stdlib.h>
+int   main(int argc, char *argv[])
 {
-	printf("%i", ft_recursive_power(5, 1));
+        (void) argc;
+        printf("%d", ft_recursive_power(atoi(argv[1]), atoi(argv[2])));
+        return 0;
 }*/

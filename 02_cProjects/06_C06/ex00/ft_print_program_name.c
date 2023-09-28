@@ -3,20 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_program_name.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yahmadi <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: avadsoon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/25 15:25:33 by yahmadi           #+#    #+#             */
-/*   Updated: 2023/09/25 19:18:54 by yahmadi          ###   ########.fr       */
+/*   Created: 2023/09/28 14:24:34 by avadsoon          #+#    #+#             */
+/*   Updated: 2023/09/28 14:24:58 by avadsoon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h>
 
 void	ft_putchar(char c)
 {
 	write (1, &c, 1);
 }
+
+/*
+#include <stdio.h>
 
 int	main(int argc, char *argv[])
 {
@@ -30,4 +32,4 @@ int	main(int argc, char *argv[])
 	}
 	ft_putchar('\n');
 	return (0);
-}
+}*/

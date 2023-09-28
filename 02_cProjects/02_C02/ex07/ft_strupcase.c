@@ -6,11 +6,9 @@
 /*   By: avadsoon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/23 18:02:58 by avadsoon          #+#    #+#             */
-/*   Updated: 2023/09/26 12:12:25 by avadsoon         ###   ########.fr       */
+/*   Updated: 2023/09/28 13:49:37 by avadsoon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
-#include <stdio.h>
 
 char	*ft_strupcase(char *str)
 {
@@ -28,6 +26,8 @@ char	*ft_strupcase(char *str)
 	return (str);
 }
 /*
+#include <stdio.h>
+
 int	main()
 {
 	char	str[11] = "abcdefghij";

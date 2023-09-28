@@ -3,20 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_params.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yahmadi <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: avadsoon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/25 16:13:43 by yahmadi           #+#    #+#             */
-/*   Updated: 2023/09/25 18:20:53 by yahmadi          ###   ########.fr       */
+/*   Created: 2023/09/28 14:26:04 by avadsoon          #+#    #+#             */
+/*   Updated: 2023/09/28 14:26:14 by avadsoon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h>
 
 void	ft_putchar(char c)
 {
 	write (1, &c, 1);
 }
+/*
+#include <stdio.h>
 
 int	main(int argc, char *argv[])
 {
@@ -36,4 +37,4 @@ int	main(int argc, char *argv[])
 		j++;
 	}
 	return (0);
-}
+}*/

@@ -6,12 +6,9 @@
 /*   By: avadsoon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 21:05:31 by avadsoon          #+#    #+#             */
-/*   Updated: 2023/09/26 17:37:57 by avadsoon         ###   ########.fr       */
+/*   Updated: 2023/09/27 13:25:41 by avadsoon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
-#include <stdio.h>
 
 int	ft_strlen(char *str)
 {
@@ -52,6 +49,8 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	return (dlen + slen);
 }
 /*
+#include <stdio.h>
+
 int main (void)
 {
 	char src[] = "Born to program the world!";

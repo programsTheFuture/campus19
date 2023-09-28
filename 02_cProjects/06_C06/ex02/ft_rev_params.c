@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_rev_params.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yahmadi <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: avadsoon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/25 18:30:07 by yahmadi           #+#    #+#             */
-/*   Updated: 2023/09/25 18:37:17 by yahmadi          ###   ########.fr       */
+/*   Created: 2023/09/28 14:27:15 by avadsoon          #+#    #+#             */
+/*   Updated: 2023/09/28 14:27:32 by avadsoon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_putchar(char c)
 {
 	write (1, &c, 1);
 }
+/*
+#include <stdio.h>
 
 int	main(int argc, char *argv[])
 {
@@ -35,4 +37,4 @@ int	main(int argc, char *argv[])
 		i--;
 	}
 	return (0);
-}
+}*/
